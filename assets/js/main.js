@@ -599,6 +599,8 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         /* ---------------------------------------------- /*
          * Google Map
+         var mkr = new google.maps.LatLng(36.174465, -86.767960);
+        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(36.174465, -86.767960);
          /* ---------------------------------------------- */
 
         if($("#map").length == 0 || typeof google == 'undefined') return;
@@ -618,7 +620,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 scrollwheel: false,
                 // The latitude and longitude to center the map (always required)
                 center: cntr, // New York
-
+                
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
                 styles: [
@@ -837,9 +839,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             var marker = new google.maps.Marker({
                 position: mkr,
                 icon: image,
-                title: 'Titan',
+                title: 'Your Cloud Strategist',
                 infoWindow: {
-                    content: '<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
+                    content: '<p><strong>Nahville, Tennessee</strong></p>'
                 },
                 map: map,
             });
