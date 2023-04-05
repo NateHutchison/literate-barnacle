@@ -606,7 +606,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         if($("#map").length == 0 || typeof google == 'undefined') return;
 
         // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
+        google.maps.event.addEventListener(window, 'load', init);
 
         var mkr = new google.maps.LatLng(36.174465, -86.767960);
         var cntr = (mobileTest) ? mkr : new google.maps.LatLng(36.174465, -86.767960);
